@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column1 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.column2 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+}
