@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Information Input Form</title>
+    <style>
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .form-input {
+        width: 500px;
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .form-submit {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Enter Information:</h2>
+      <form>
+        <p>Column 1: <input class="form-input" type="text" id="column1"></p>
+        <p>Column 2: <input class="form-input" type="text" id="column2"></p>
+        <button class="form-submit" onclick="storeInformation()">Submit</button>
+      </form>
+      <p id="output"></p>
+    </div>
+    <script>
+      function storeInformation() {
+        var column1 = document.getElementById("column1").value;
+        var column2 = document.getElementById("column2").value;
+        document.getElementById("output").innerHTML = "Column 1: " + column1 + "<br>Column 2: " + column2;
+      }
+    </script>
+  </body>
+</html>
